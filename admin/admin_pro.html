@@ -1,0 +1,185 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Clicker Script">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+<link rel="stylesheet" href="./public/stylesheets/admin_pro.css">
+  <link rel="stylesheet" href="./css/fontawesome6.css">
+
+  <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        window.onload = function() {
+           getAll(),
+           getNew()
+        }
+    </script>
+  <div class="head">
+    <p class="logo">Fashion</p>
+    <div class="search-container">
+      <input type="text" id="productSearch" placeholder="Tìm kiếm...">
+      <button onclick="searchProduct()" id="search">Tìm kiếm</button>
+    </div>
+
+    <div class="user-section">
+      <img src="./img/world_trigger_bia_tap_1.jpg" alt="User" class="user-avatar">
+      <span class="user-name">User</span>
+    </div>
+  </div>
+  <div class="container">
+    <div class="bor-left">
+      <div class="col-left">
+        <ul>
+          <li><a style="text-decoration: none;" href="./admin.html"><button class="manager-button" id="btn"><i
+                  style="margin-right: 5px;" class="fa-solid fa-books"></i>Quản lí sản phẩm</button></a></li>
+          <li><a style="text-decoration: none;" href="./admin_cate.html"><button class="manager-button" id="btn2"><i
+                  style="margin-right: 5px;" class="fa-solid fa-list"></i>Quản lí danh mục</button></a></li>
+          <!-- <li><a style="text-decoration: none;" href="#"><button class="manager-button" id="btn2"><i
+                  style="margin-right: 5px;" class="fa-solid fa-cart-shopping"></i>Quản lí đơn
+                hàng</button></a></li>
+          <li><a style="text-decoration: none;" href="#"><button class="manager-button" id="btn2"> <i
+                  style="margin-right: 5px;" class="fa-solid fa-right-from-bracket"></i>Đăng xuất</button></a>
+          </li> -->
+          <li><a style="text-decoration: none;" href="#"><button class="manager-button" id="btn2"></button></a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="bor-right">
+      <div class="col-right">
+        <table class="table" id="render">
+          <a>
+            <h2 style="float: left; font-family: 'Playfair Display'; margin-top: 10px;">Quản lí sản phẩm</h2>
+            <a href="./addpro.html"><button class="add-pro">Thêm sản phẩm</button></a>
+            <tr>
+              <th>STT</th>
+              <th>Ảnh</th>
+              <th>Tên</th>
+              <th>Danh mục</th>
+              <th>Giá</th>
+              <th>Mô tả</th>
+              <th style="width: 250px;">Thao tác</th>
+            </tr>
+          </thead>
+          <tbody id="dulieu">
+            <!-- <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td><td></td>
+            <td></td>
+            <td><button class="edit-button">Chỉnh sửa</button>
+              <button class="delete-button">Xóa</button>
+            </td>
+          </tr> -->
+
+          </tbody>
+          
+        </table>
+      </div>
+
+      <!-- <div id="addProductOverlay"></div>
+      <div id="addProductModal">
+        <h2>Thêm sản phẩm</h2><br>
+        <form id="formThemSanPham">
+          <label for="">Tên sản phẩm</label><br>
+          <input type="text" id="name" name="productName" placeholder="Nhập tên sản phẩm" required><br>
+          <label for="">Giá sản phẩm</label><br>
+          <input type="number" id="price" name="productPrice" placeholder="Nhập giá sản phẩm" required><br>
+          <label for="">Hình ảnh</label><br>
+          <input type="text" id="imgLink" name="imageLink" placeholder="Nhập liên kết hình ảnh">
+          <label for="category">Danh mục</label>
+          <select id="category">
+            <option value="Best Seller">Best Seller</option>
+            <option value="Hot">Hot</option>
+          </select><br><br>
+
+          <label for="">Mô tả</label><br>
+          <textarea name="mota" id="desc" cols="30" rows="5" style="width:100%; border:1px #CCC solid"></textarea><br>
+
+          <button style="float: left;" class="add-button" type="button" onclick="addProduct()">Thêm</button>
+          <button style="float: right;" class="close-button" type="button">Đóng</button>
+        </form>
+      </div> -->
+
+
+      <!-- <div id="editProductOverlay"></div>
+      <div id="editModal" class="modal"> -->
+        <!-- <div class="modal-content">
+          <span class="close">&times;</span>
+
+          <div class="form">
+            <label for="">Tên sản phẩm</label>
+            <br />
+            <input value="${pro.name}" type="text" id="name" />
+            <br />
+            <label for="">Hình ảnh</label>
+            <br />
+            <input type="file" id="image"/>
+            <br />
+            <label for="">Giá</label>
+            <br />
+            <input type="text" id="price" value="${pro.price}" />
+             <br />
+            <label for="">Danh mục</label>
+            <br />
+            <select id="category">
+                <option value="Tivi">Tivi</option>
+                <option value="Tủ lạ nh">Tủ lạnh</option>
+            </select> 
+            <br />
+            <label for="">Mô tả</label>
+            <br />
+            <input value="${pro.mota}" type="text" id="description" />
+            <br />
+            <button id="addPro">Thêm</button>
+          </div>
+
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html> <!-- 
+<script type="module" src="./app/listProducts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script>
+  
+//mo modal them san pham
+function open() {
+  let btn = document.querySelector("button.add-pro");
+  let form = document.querySelector("#addProductModal");
+  btn.addEventListener("click", () => {
+    form.style.display = "block";
+    document.getElementById("addProductOverlay").style.display = "block";
+    // console.log(1);
+  });
+}
+open();
+
+//dong modal them san pham 
+function close() {
+  let btn = document.querySelector("button.close-button");
+  let form = document.querySelector("#addProductModal");
+  btn.addEventListener("click", () => {
+    form.style.display = "none";
+    document.getElementById("addProductOverlay").style.display = "none";
+    // console.log(1);
+  });
+}
+close();
+
+</script> -->

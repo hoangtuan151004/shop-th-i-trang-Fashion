@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/stylesheets/admin_pro.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function() {
+           getCategory()
+        }
+    </script>
+
+<div id="addProductModal">
+  <h2>Thêm sản phẩm</h2><br>
+  <form id="formThemSanPham">
+      <label for="name">Tên sản phẩm</label><br>
+      <input type="text" id="name" name="name" placeholder="Nhập tên sản phẩm" required><br>
+      <label for="price_1">Giá sản phẩm </label><br>
+      <input type="number" id="price_1" name="price_1" placeholder="Nhập giá sản phẩm" required><br>
+      <label for="image">Hình ảnh</label><br>
+      <input type="file" id="image" name="image" placeholder="Nhập hình ảnh">
+      <label for="cate">Danh mục</label>
+      <select name="cate" id="cate">
+      </select><br><br>
+
+      <label for="mota_1">Mô tả</label><br>
+      <textarea name="mota_1" id="mota_1" cols="30" rows="5" style="width:100%; border:1px #CCC solid"></textarea><br>
+
+      <button style="float: left;" class="add-button" type="button" onclick="insertProduct()">Thêm</button>
+      <button style="float: right;" class="close-button" type="button">Đóng</button>
+  </form>
+</div>
+
+</body>
+</html>
+<script src="./index.js"></script>

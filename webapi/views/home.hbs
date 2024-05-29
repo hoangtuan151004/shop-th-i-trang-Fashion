@@ -1,0 +1,272 @@
+<header>
+    <nav>
+        <p class="logo">Fashion</p>
+
+        <ul>
+            <li><a href="/">Trang Chủ</a></li>
+            <li><a href="#">Sản Phẩm</a></li>
+            <li><a href="./cart.html">Giỏ Hàng</a></li>
+
+            <!-- <li><a href="./admin.html">Admin</a></li> -->
+            <li><a href="./login.html">Tài Khoản</a></li>
+        </ul>
+        <!-- <button class="btn">Sign Up  </button> -->
+    </nav>
+    <div class="content">
+        <h1>Fashion</h1>
+        <p>Fashion all</p>
+        <br>
+        <button type="submit" class="btn">Order Now</button>
+
+    </div>
+
+</header>
+
+
+    <!-- <img src="/images/wave.png" alt="" width="800px" height="180"> -->
+
+    <div class="content-3">
+        <h2>Tất cả sản phẩm</h2><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos.</p><br>
+        <div class="box" id="bestseller">
+            {{#each pros}}
+            <a style="text-decoration: none;" href="/detail/{{this.id}}">
+                <div class="box1 mr1">
+                    <img src="/images/{{this.image}}" alt="">
+                    <h4>{{this.name}}</h4>
+                    <p><del>{{this.price_1}}</del></p>
+                    <h5>{{this.price_2}}</h5>
+                    <button class="btn-order" style ="margin: auto; margin-top: 20px;">Đặt hàng ngay</button>
+                </div>
+            </a>
+            {{/each}}
+
+            {{!-- <div class="box1 mr1">
+                <img src="/images/muonkiepnhansinh2.jpg" alt="">
+                <h4>Muôn kiếp nhân sinh 2</h4>
+                <p><del>200</del></p>
+                <h5>$8.50</h5>
+                <button class="btn" style="margin: auto;margin-top: 20px;">Order Now</button>
+            </div> --}}
+            {{!-- <div class="box1 mr1">
+                <img src="/images/muonkiepnhansinh3.jpg" alt="">
+                <h4>Muôn kiếp nhân sinh 3</h4>
+                <p><del>200</del></p>
+                <h5>$8.50</h5>
+                <button class="btn" style="margin: auto;margin-top: 20px;">Order Now</button>
+            </div>
+            <div class="box1 mr1">
+                <a href="./pages/detail.html"><img src="/images/damtreodaiduongden.png" alt="">
+                    <h4>Đám trẻ ở đại dương đen</h4>
+                    <p><del>200</del></p>
+                    <h5>$8.50</h5>
+                </a>
+                <button class="btn" style="margin: auto;margin-top: 20px;">Order Now</button>
+            </div> --}}
+
+        </div>
+    </div>
+    <button class="view-more">Xem thêm</button>
+
+
+ <div class="content-3">
+        <h2>Sản phẩm</h2><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos.</p><br>
+        <div class="box" id="bestseller">
+            {{#each hotProducts}}
+ 
+                <div class="box1 mr1">
+                    <img src="/images/{{this.image}}" alt="">
+                    <h4>{{this.name}}</h4>
+                    <p><del>{{this.price_1}}</del></p>
+                    <h5>{{this.price_2}}</h5>
+                    <button class="btn-order" style="margin: auto; margin-top: 20px;">Đặt hàng ngay</button>
+                </div>
+            </a>
+            {{/each}}
+        </div>
+    </div>
+    <button class="view-more">Xem thêm</button>
+
+
+     <div class="content-3">
+        <h2>Sản phẩm giảm giá</h2><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos.</p><br>
+        <div class="box" id="bestseller">
+            {{#each saleProducts}}
+            <a style="text-decoration: none;" href="/detail/{{this.id}}">
+                <div class="box1 mr1">
+                    <img src="/images/{{this.image}}" alt="">
+                    <h4>{{this.name}}</h4>
+                    <p><del>{{this.price_1}}</del></p>
+                    <h5>{{this.price_2}}</h5>
+                    <button class="btn-order" style="margin: auto; margin-top: 20px;">Đặt hàng ngay</button>
+                </div>
+            </a>
+            {{/each}}
+        </div>
+    </div>
+    <button class="view-more">Xem thêm</button>
+
+ <div class="content-3">
+        <h2>Sản phẩm mới</h2><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos.</p><br>
+        <div class="box" id="bestseller">
+            {{#each newProducts}}
+            <a style="text-decoration: none;" href="/detail/{{this.id}}">
+                <div class="box1 mr1">
+                    <img src="/images/{{this.image}}" alt="">
+                    <h4>{{this.name}}</h4>
+                    <p><del>{{this.price_1}}</del></p>
+                    <h5>{{this.price_2}}</h5>
+                    <button class="btn-order" style="margin: auto; margin-top: 20px;">Đặt hàng ngay</button>
+                </div>
+            </a>
+            {{/each}}
+        </div>
+    </div>
+    <button class="view-more">Xem thêm</button>
+
+
+    <div class="content-3">
+        <h2>Sản phẩm</h2><br>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos.</p><br>
+        <div class="box" id="hot">
+            {{#each vanhoc}}
+            <a style="text-decoration: none;" href="/detail/{{this.id}}">
+                <div class="box1 mr1">
+                    <img src="/images/{{this.image}}" alt="">
+                    <h4>{{this.name}}</h4>
+                    <p><del>{{this.price_1}}</del></p>
+                    <h5>{{this.price_2}}</h5>
+                    <button class="btn-order" style="margin: auto; margin-top: 20px;">Đặt hàng ngay</button>
+                </div>
+            </a>
+            {{/each}}
+
+        </div></div>
+                <div class="content-3">
+                    <h2>Sản phẩm</h2><br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos.</p><br>
+                    <div class="box" id="hot">
+                        {{#each tieuthuyet}}
+                        <a style="text-decoration: none;" href="/detail/{{this.id}}">
+                            <div class="box1 mr1">
+                                <img src="/images/{{this.image}}" alt="">
+                                <h4>{{this.name}}</h4>
+                                <p><del>{{this.price_1}}</del></p>
+                                <h5>{{this.price_2}}</h5>
+                                <button class="btn-order" style="margin: auto; margin-top: 20px;">Đặt hàng ngay</button>
+                            </div>
+                        </a>
+                        {{/each}}
+                        <!-- <div class="box1 mr1">
+                        <img src="/images/muonkiepnhansinh.png" alt="">
+                        <h4>Muôn kiếp nhân sinh</h4>
+                        <p><del>200</del></p>
+                        <h5>$8.50</h5>
+                        <button class="btn" style="margin: auto; margin-top: 20px;">Order Now</button>
+                    </div>
+                    <div class="box1 mr1">
+                        <img src="/images/muonkiepnhansinh2.jpg" alt="">
+                        <h4>Muôn kiếp nhân sinh 2</h4>
+                        <p><del>200</del></p>
+                        <h5>$8.50</h5>
+                        <button class="btn" style="margin: auto;margin-top: 20px;">Order Now</button>
+                    </div>
+                    <div class="box1 mr1">
+                        <img src="/images/muonkiepnhansinh3.jpg" alt="">
+                        <h4>Muôn kiếp nhân sinh 3</h4>
+                        <p><del>200</del></p>
+                        <h5>$8.50</h5>
+                        <button class="btn" style="margin: auto;margin-top: 20px;">Order Now</button>
+                    </div>
+                    <div class="box1 mr1">
+                        <img src="/images/damtreodaiduongden.png" alt="">
+                        <h4>Đám trẻ ở đại dương đen</h4>
+                        <p><del>200</del></p>
+                        <h5>$8.50</h5>
+                        <button class="btn" style="margin: auto;margin-top: 20px;">Order Now</button>
+                    </div>
+
+                </div>
+            </div>
+            <button class="view-more">Xem thêm</button>  -->
+
+                        <!-- 
+            <p>Great ideas start with great book, Lets help you achieve that</p><br>
+            <h3>Get started today.</h3><br>
+            <button class="btn" style="margin: auto;">Join Us</button> -->
+                    </div><br>
+                    <div class="content-5">
+
+                        <!-- <h2>Our book perfection feedback</h2>
+            <p>Our customers has amazing things to say about us</p> -->
+
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+
+                <footer>
+                    <div class="row">
+                        <div class="col">
+                            <h3>Fashion</h3>
+                        </div>
+                        <div class="col">
+                            <h3>About</h3>
+                            <ul>
+                                <li><a href="">Menu</a></li>
+                                <li><a href="">Features</a></li>
+                                <li><a href="">News & Blogs</a></li>
+                                <li><a href="">Help & Supports</a></li>
+
+
+                            </ul>
+                        </div>
+                        <!-- 
+            <div class="col"><h3>Company</h3>
+                <ul>
+                    <li><a href="">How we work</a></li>
+                    <li><a href="">Terms of service</a></li>
+
+                    <li><a href="">Pricing</a></li>
+                    <li><a href="">FAQ</a></li>
+
+
+                </ul></div>  -->
+                        <div class="col">
+                            <h3>Liên hệ</h3>
+                            <ul>
+                                <li><a href="">QTSC, Tân Chánh Hiệp,<br> Quận 12, TPHCM</a></li>
+                                <li><a href="">+1 202-918-2132</a></li>
+
+                                <li><a href="">thivcps28621@mail.com</a></li>
+                                <li><a href="">www..com</a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Nhận thông báo</h3>
+                            <form>
+                                <box-icon name='envelope'></box-icon>
+                                <input type="email" placeholder="Enter email" required>
+
+                                <button type="submit"><box-icon name='right-arrow-alt'></box-icon></button>
+                            </form>
+                            <!-- <div class="social-icon">
+                    <box-icon class="fab" name='facebook' type='logo'></box-icon>
+                    <box-icon class="fab" name='twitter' type='logo'></box-icon>
+                    <box-icon class="fab" name='instagram' type='logo'></box-icon>
+                </div> -->
+                        </div>
+
+                    </div>
+                </footer>

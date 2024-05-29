@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store - Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="./public/stylesheets/detail.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Clicker Script">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair Display">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <script>
+        window.onload = function() {
+            getProDetail ()
+        }
+    </script>
+    <div class="header-detail">
+        <nav>
+            <p class="logo">Fashion</p>
+            <ul>
+                <li><a href="/">Trang Chủ</a></li>
+                <li><a href="#">Sản Phẩm</a></li>
+                <li><a href="./cart.html">Giỏ Hàng</a></li>
+                <li><a href="/login.html">Tài Khoản</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="row-content" id="showDetail">
+            <div class="row-left">
+                <img id="image" name="image" src="" alt=""><br>
+            </div>
+            <div class="row-right">
+                <h3 id="name"></h3>
+                <div class="price">
+                    <del style="color: #ddd; font-size: 25px;" id="price_1"></del>
+                    <span id="price_2"></span>
+                </div>
+                <p style="margin-top: 30px;" id="mota_1"></p>
+                <div class="quantity">
+                    <input class="number" type="number" name="" id="" min="1" max="100" value="1">
+                </div>
+                <button type="submit" class="btn">Thêm vào giỏ</button>
+                <p style="margin-top: 20px;" id="mota_2"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <h3>Fashion</h3>
+            </div>
+            <div class="col">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="">Menu</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">News & Blogs</a></li>
+                    <li><a href="">Help & Supports</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Liên hệ</h3>
+                <ul>
+                    <li><a href="">QTSC, Tân Chánh Hiệp,<br> Quận 12, TPHCM</a></li>
+                    <li><a href="">+1 202-918-2132</a></li>
+                    <li><a href="">thivcps28621@mail.com</a></li>
+                    <li><a href="">www..com</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>Nhận thông báo</h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter email" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./index.js"></script>
+</body>
+
+</html>
